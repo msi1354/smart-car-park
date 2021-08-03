@@ -11,7 +11,13 @@ basic.forever(function () {
             basic.pause(1000)
         }
     } else {
-        basic.showNumber(input.magneticForce(Dimension.Strength))
+        basic.showLeds(`
+            . . . . .
+            . . . . #
+            . . . # .
+            # . # . .
+            . # . . .
+            `)
         radio.sendNumber(0)
         basic.pause(100)
     }
