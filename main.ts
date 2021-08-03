@@ -8,7 +8,17 @@ basic.forever(function () {
         while (time > 0 && input.magneticForce(Dimension.Strength) > 250) {
             time += 0 - 1
             basic.showNumber(time)
-            basic.pause(1000)
+            basic.pause(500)
+        }
+        while (time == 0 && input.magneticForce(Dimension.Strength) > 250) {
+            radio.sendNumber(2)
+            basic.showLeds(`
+                # . # . #
+                # . # . #
+                # . # . #
+                . . . . .
+                # . # . #
+                `)
         }
     } else {
         basic.showLeds(`
