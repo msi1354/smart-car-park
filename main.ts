@@ -10,6 +10,13 @@ basic.forever(function () {
             basic.showNumber(time)
             basic.pause(500)
         }
+        basic.showLeds(`
+            # . # . #
+            # . # . #
+            # . # . #
+            . . . . .
+            # . # . #
+            `)
     } else {
         basic.showLeds(`
             . . . . .
